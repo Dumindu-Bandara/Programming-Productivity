@@ -205,6 +205,7 @@ docker pull yourname/hello-docker:1.0.0
 - Huge Images -> Multi-stage builds, slim bases, `--no-cache-dir`, prune 
 
 ```bash
-docker system prune -f
+docker container prune # Remove all the stopped containers
+docker system prune -f # Removes images as well, Not recommended. 
 docker builder prune -f
 ```
